@@ -49,7 +49,7 @@ def crawler(event,context):
 					description = item['description']
 					image = item['image']
 					try:
-						r = requests.post('http://3.16.58.104:5000/books/importData', data={
+						r = requests.post('http://{SERVER_IP}/books/importData', data={
 							'title': title,
 							'author': author,
 							'isbn': isbn,
