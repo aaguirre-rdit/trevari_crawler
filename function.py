@@ -15,8 +15,8 @@ def crawler(event,context):
 			for jong in range(0, 28):
 				hanSyl.append(hangulSyllableFinder(cho, jung, jong))
 	today = datetime.date.today()
-	client_id = "_xkzhN_KZRgp48B3EetB"
-	client_secret = "qfkFS_0oVS"
+	client_id = "{CLIENT ID}"
+	client_secret = "{CLIENT SECRET}"
 	cleanr = re.compile('<.*?>')
 	for delta in range(7, 0, -1):
 		other = today - datetime.timedelta(delta)
